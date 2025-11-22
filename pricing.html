@@ -1,0 +1,473 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Osyrs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+      body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fcfcfc;
+      }
+      /* Chrome Text Effect */
+      .chrome-text {
+      background: linear-gradient(to right, #1a1a1a 20%, #5b5b5b 30%, #1a1a1a 70%, #5b5b5b 80%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 200% auto;
+      animation: shine 8s linear infinite;
+      }
+      /* Glass Utilities */
+      .glass-nav {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.03);
+      }
+      .glass-card {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+      .glass-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+      background: rgba(255, 255, 255, 0.6);
+      }
+      .glass-button {
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(229, 231, 235, 0.8);
+      transition: all 0.2s ease;
+      }
+      .glass-button:hover {
+      background: rgba(255, 255, 255, 0.8);
+      border-color: rgba(0,0,0,0.1);
+      }
+      /* Primary Button Gradient */
+      .primary-btn {
+      background: linear-gradient(135deg, #111827 0%, #374151 100%);
+      color: white;
+      box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      }
+      .primary-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      }
+      /* Popular Card Specifics */
+      .card-popular {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(59, 130, 246, 0.15);
+      box-shadow: 0 8px 40px rgba(59, 130, 246, 0.06);
+      }
+      .card-popular::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 2rem;
+      padding: 1px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(59, 130, 246, 0.1));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      }
+      /* Animation */
+      @keyframes shine {
+      to { background-position: 200% center; }
+      }
+      .fade-in-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      opacity: 0;
+      transform: translateY(20px);
+      }
+      .delay-100 { animation-delay: 0.1s; }
+      .delay-200 { animation-delay: 0.2s; }
+      .delay-300 { animation-delay: 0.3s; }
+      @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+      }
+      /* Check icon color gradient text fallback */
+      .icon-check { color: #4b5563; }
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">
+.font-geist { font-family: 'Geist', sans-serif !important; }
+</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">
+.font-roboto { font-family: 'Roboto', sans-serif !important; }
+</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">
+.font-montserrat { font-family: 'Montserrat', sans-serif !important; }
+</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">
+.font-poppins { font-family: 'Poppins', sans-serif !important; }
+</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">
+.font-playfair { font-family: 'Playfair Display', serif !important; }
+</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">
+.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }
+</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">
+.font-merriweather { font-family: 'Merriweather', serif !important; }
+</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">
+.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }
+</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }
+</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">
+.font-manrope { font-family: 'Manrope', sans-serif !important; }
+</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">
+.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }
+</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">
+.font-work-sans { font-family: 'Work Sans', sans-serif !important; }
+</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">
+.font-pt-serif { font-family: 'PT Serif', serif !important; }
+</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">
+.font-geist-mono { font-family: 'Geist Mono', monospace !important; }
+</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">
+.font-space-mono { font-family: 'Space Mono', monospace !important; }
+</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">
+.font-quicksand { font-family: 'Quicksand', sans-serif !important; }
+</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">
+.font-nunito { font-family: 'Nunito', sans-serif !important; }
+</style></head>
+  <body class="text-slate-900 antialiased selection:bg-slate-200 selection:text-slate-900 overflow-x-hidden">
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full h-[1000px] bg-gradient-to-b from-blue-50/40 via-purple-50/20 to-transparent pointer-events-none -z-10 blur-3xl opacity-70"></div>
+    <div class="fixed top-[10%] left-[10%] w-[600px] h-[600px] bg-indigo-100/20 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+    <div class="fixed top-[30%] right-[10%] w-[500px] h-[500px] bg-rose-100/20 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+    <!-- 1. NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+      <div class="flex h-16 max-w-7xl mr-auto ml-auto pr-6 pl-6 relative items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-2 group cursor-pointer">
+          <div class="flex transition-transform group-hover:scale-105 text-white w-8 h-8 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5696d097-a881-4d50-a009-1e091d86288d_320w.png)] bg-cover bg-center rounded-lg items-center justify-center"></div>
+          <span class="group-hover:opacity-80 transition-opacity cursor-pointer text-xl font-semibold text-slate-900 tracking-tight" onclick="window.location.href='/home'" role="button">
+            Osyrs
+          </span>
+        </div>
+
+        <!-- Centered Text Links (Desktop) -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Home
+          </a>
+          <a href="/how-it-works" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            How it works
+          </a>
+          <a href="/features" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Features
+          </a>
+          <a href="/pricing" class="text-slate-900 text-sm font-medium transition-colors">
+            Pricing
+          </a>
+          <a href="/roadmap" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+            Roadmap
+          </a>
+          <a href="/vision" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+            Vision
+          </a>
+          <a href="/faq" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            FAQ
+          </a>
+        </div>
+
+        <!-- Right Actions (Desktop Only) -->
+        <div class="hidden md:flex items-center gap-3">
+          <button class="hidden sm:flex glass-button px-4 py-2 rounded-full text-sm font-medium text-slate-700">
+            Log in
+          </button>
+          <button class="primary-btn text-sm font-medium text-slate-800 bg-gradient-to-br from-black/10 via-black/0 to-black/10 rounded-full pt-2 pr-5 pb-2 pl-5 cursor-pointer" onclick="window.location.href='https://forms.gle/1YqfPcUctL5uzTcE6'" role="button">
+            Join waitlist
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger (Mobile Only) -->
+        <button class="md:hidden p-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200/60 text-slate-900 shadow-sm transition-colors z-50" onclick="document.getElementById('mobile-dropdown').classList.toggle('hidden')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-dropdown" class="hidden absolute top-[70px] right-6 w-[300px] bg-white rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-6 flex flex-col gap-5 z-40 border border-slate-100/80">
+          <div class="flex flex-col gap-4">
+            <a href="/" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Home
+            </a>
+            <a href="/how-it-works" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              How it works
+            </a>
+            <a href="/features" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Features
+            </a>
+            <a href="/pricing" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Pricing
+            </a>
+            <a href="/roadmap" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Roadmap
+            </a>
+            <a href="/vision" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Vision
+            </a>
+            <a href="/faq" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              FAQ
+            </a>
+          </div>
+
+          <div class="h-px w-full bg-slate-100"></div>
+
+          <div class="flex flex-col gap-4">
+            <a href="/login" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Log in
+            </a>
+            <button class="flex items-center justify-between text-slate-900 font-semibold text-[15px] tracking-tight group w-full">
+              Join waitlist
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-slate-400 group-hover:text-slate-900 transition-colors">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. PAGE HEADER -->
+    <section class="pt-40 pb-16 px-6 text-center md:pt-48 md:pl-6 md:pr-6 md:pb-20">
+      <div class="max-w-3xl mx-auto relative">
+        <h1 class="leading-[1.1] md:text-7xl text-4xl font-semibold text-slate-900 tracking-tight mb-6 relative fade-in-up">
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[150%] bg-[radial-gradient(closest-side,#EEF3FF,#DEE9FF,transparent)] blur-3xl -z-10 pointer-events-none"></div>
+          <span class="chrome-text">Choose your Osyrs membership.</span>
+        </h1>
+        <p class="fade-in-up delay-100 text-xl font-normal text-slate-500 tracking-tighter">
+          Start free, upgrade when you want full intelligence.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. PRICING CARDS -->
+    <section class="px-6 pb-32">
+      <div class="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto pt-5 gap-x-8 gap-y-8">
+        <!-- CARD 1: FREE -->
+        <div class="fade-in-up delay-200 glass-card rounded-[2rem] p-8 flex flex-col h-full relative overflow-hidden group">
+          <div class="mb-8">
+            <h3 class="text-lg font-medium text-slate-900 mb-1">Osyrs Free</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-semibold tracking-tight text-slate-900">
+                £0
+              </span>
+              <span class="text-slate-400 text-sm">/ month</span>
+            </div>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              For basic clarity and simple tracking.
+            </p>
+          </div>
+
+          <div class="flex-grow">
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span class="">Connect up to 1 bank account</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Basic spend overview</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Weekly &amp; monthly summaries</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Search + transaction filters</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Manual vault allocations</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Limited Osyrs Learn</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="glass-button group-hover:bg-white transition-colors cursor-pointer text-sm font-medium text-slate-700 w-full rounded-full pt-3 pb-3" onclick="window.location.href='https://forms.gle/1YqfPcUctL5uzTcE6'" role="button">
+            Get Started
+          </button>
+        </div>
+
+        <!-- CARD 2: PLUS (POPULAR) -->
+        <div class="fade-in-up delay-300 glass-card card-popular rounded-[2rem] p-8 flex flex-col h-full relative overflow-hidden group transform md:-translate-y-4 md:pb-12">
+          <!-- Badge -->
+          <div class="absolute top-0 inset-x-0 flex justify-center -mt-3">
+            
+          </div>
+
+          <div class="mb-8 mt-4">
+            <h3 class="text-lg font-medium text-slate-950 mb-1">Osyrs Plus</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-semibold tracking-tight text-slate-900">
+                £12
+              </span>
+              <span class="text-slate-400 text-sm">/ month</span>
+            </div>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Your complete financial operating system.
+            </p>
+          </div>
+
+          <div class="flex-grow">
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Unlimited bank connections</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Predictive modelling &amp; forecasting</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Real-time oversight</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span class="">Dynamic rebalancing</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Goal-based automation</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span class="">Monthly deep-dive report</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="primary-btn shadow-blue-900/10 text-sm font-medium w-full rounded-full pt-3 pb-3 shadow-lg" onclick="window.location.href='https://forms.gle/1YqfPcUctL5uzTcE6'" role="button">
+            Choose Plus
+          </button>
+
+          <!-- Subtle Glow inside card -->
+          <div class="absolute bottom-0 right-0 w-32 h-32 bg-blue-400/10 blur-3xl rounded-full pointer-events-none"></div>
+        </div>
+
+        <!-- CARD 3: PRO -->
+        <div class="fade-in-up delay-300 glass-card flex flex-col overflow-hidden group h-full rounded-[2rem] pt-8 pr-8 pb-8 pl-8 relative">
+          <div class="mb-8">
+            <h3 class="text-lg font-medium text-slate-900 mb-1">Osyrs Pro</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-semibold tracking-tight text-slate-900">
+                £45
+              </span>
+              <span class="text-slate-400 text-sm">/ month</span>
+            </div>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              The premium lifestyle membership.
+            </p>
+          </div>
+
+          <div class="flex-grow">
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span class="">Everything in Plus</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Curated lifestyle perks</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Agentic planning for experiences</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Auto-budgeting around events</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span>Calendar-integrated suggestions</span>
+              </li>
+              <li class="flex items-start gap-3 text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-4 h-4 text-slate-400 mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"></path></svg>
+                <span class="">Pro-level Osyrs Learn</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="glass-button group-hover:bg-white transition-colors cursor-pointer text-sm font-medium text-slate-700 w-full rounded-full pt-3 pb-3" onclick="window.location.href='https://forms.gle/1YqfPcUctL5uzTcE6'" role="button">Coming soon</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FOOTER -->
+    <footer class="py-12 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 opacity-60 hover:opacity-100 transition-opacity">
+        <div class="flex items-center gap-2">
+          <span class="text-sm font-semibold text-slate-900 tracking-tight">
+            Osyrs Ltd
+          </span>
+          <span class="text-xs text-slate-400">© 2024</span>
+        </div>
+        <div class="flex gap-6">
+          <a href="#" class="text-xs text-slate-500 hover:text-slate-900 transition-colors">
+            Privacy
+          </a>
+          <a href="#" class="text-xs text-slate-500 hover:text-slate-900 transition-colors">
+            Terms
+          </a>
+          <a href="#" class="text-xs text-slate-500 hover:text-slate-900 transition-colors">
+            Twitter
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  
+</body></html>

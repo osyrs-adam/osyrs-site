@@ -190,18 +190,18 @@
 
     <!-- 1. NAVBAR -->
     <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
-      <div class="flex h-16 md:h-20 max-w-7xl mx-auto px-6 items-center justify-between">
+      <div class="flex h-16 max-w-7xl mr-auto ml-auto pr-6 pl-6 relative items-center justify-between">
         <!-- Logo -->
-        <div class="flex items-center gap-2.5 group cursor-pointer">
-          <div class="flex transition-transform group-hover:rotate-3 bg-center text-white opacity-90 w-8 h-8 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5696d097-a881-4d50-a009-1e091d86288d_320w.png)] bg-cover rounded-lg items-center justify-center"></div>
-          <span class="text-[19px] font-semibold text-slate-900 tracking-tight" onclick="window.location.href='/home'" role="button">
+        <div class="flex items-center gap-2 group cursor-pointer">
+          <div class="flex transition-transform group-hover:scale-105 text-white w-8 h-8 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5696d097-a881-4d50-a009-1e091d86288d_320w.png)] bg-cover bg-center rounded-lg items-center justify-center"></div>
+          <span class="group-hover:opacity-80 transition-opacity cursor-pointer text-xl font-semibold text-slate-900 tracking-tight" onclick="window.location.href='/home'" role="button">
             Osyrs
           </span>
         </div>
 
-        <!-- Desktop Links -->
+        <!-- Centered Text Links (Desktop) -->
         <div class="hidden md:flex items-center gap-8">
-          <a href="/home" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+          <a href="/" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
             Home
           </a>
           <a href="/how-it-works" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
@@ -210,13 +210,13 @@
           <a href="/features" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
             Features
           </a>
-          <a href="/pricing" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+          <a href="/pricing" class="text-slate-900 text-sm font-medium transition-colors">
             Pricing
           </a>
-          <a href="/roadmap" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+          <a href="/roadmap" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
             Roadmap
           </a>
-          <a href="/vision" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+          <a href="/vision" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
             Vision
           </a>
           <a href="/faq" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
@@ -224,71 +224,65 @@
           </a>
         </div>
 
-        <!-- Desktop Actions -->
+        <!-- Right Actions (Desktop Only) -->
         <div class="hidden md:flex items-center gap-3">
-          <button class="glass-button px-4 py-2 rounded-full text-sm font-medium text-slate-700">
+          <button class="hidden sm:flex glass-button px-4 py-2 rounded-full text-sm font-medium text-slate-700">
             Log in
           </button>
-          <button class="primary-btn text-sm font-medium text-slate-700 tracking-tight bg-gradient-to-br from-black/10 via-black/0 to-black/10 rounded-full px-5 py-2">
+          <button class="primary-btn text-sm font-medium text-slate-800 bg-gradient-to-br from-black/10 via-black/0 to-black/10 rounded-full pt-2 pr-5 pb-2 pl-5 cursor-pointer" onclick="window.location.href='https://forms.gle/1YqfPcUctL5uzTcE6'" role="button">
             Join waitlist
           </button>
         </div>
 
-        <!-- Mobile Hamburger Menu -->
-        <div class="md:hidden relative">
-          <details class="group relative z-50">
-            <summary class="list-none flex items-center justify-center w-11 h-11 rounded-full bg-white border border-slate-200/80 text-slate-700 cursor-pointer hover:text-slate-900 hover:bg-slate-50 transition-all shadow-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-5 h-5">
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
+        <!-- Mobile Hamburger (Mobile Only) -->
+        <button class="md:hidden p-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200/60 text-slate-900 shadow-sm transition-colors z-50" onclick="document.getElementById('mobile-dropdown').classList.toggle('hidden')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-dropdown" class="hidden absolute top-[70px] right-6 w-[300px] bg-white rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-6 flex flex-col gap-5 z-40 border border-slate-100/80">
+          <div class="flex flex-col gap-4">
+            <a href="/" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Home
+            </a>
+            <a href="/how-it-works" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              How it works
+            </a>
+            <a href="/features" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Features
+            </a>
+            <a href="/pricing" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Pricing
+            </a>
+            <a href="/roadmap" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Roadmap
+            </a>
+            <a href="/vision" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Vision
+            </a>
+            <a href="/faq" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              FAQ
+            </a>
+          </div>
+
+          <div class="h-px w-full bg-slate-100"></div>
+
+          <div class="flex flex-col gap-4">
+            <a href="/login" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Log in
+            </a>
+            <button class="flex items-center justify-between text-slate-900 font-semibold text-[15px] tracking-tight group w-full">
+              Join waitlist
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-slate-400 group-hover:text-slate-900 transition-colors">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
               </svg>
-            </summary>
-
-            <!-- Invisible Click-Outside Layer -->
-            <div class="fixed inset-0 z-40 bg-transparent w-screen h-screen cursor-default" onclick="this.parentElement.removeAttribute('open')"></div>
-
-            <!-- Dropdown Card -->
-            <div class="absolute right-0 top-full mt-3 w-[280px] bg-white rounded-[28px] shadow-[0_15px_50px_-10px_rgba(0,0,0,0.12)] border border-slate-100 p-2 flex flex-col gap-1 z-50 animate-in fade-in slide-in-from-top-3 duration-200 origin-top-right">
-              <div class="flex flex-col py-2">
-                <a href="/home" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
-                  Home
-                </a>
-                <a href="/how-it-works" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
-                  How it works
-                </a>
-                <a href="/features" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
-                  Features
-                </a>
-                <a href="/pricing" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
-                  Pricing
-                </a>
-                <a href="/roadmap" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
-                  Roadmap
-                </a>
-                <a href="/vision" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
-                  Vision
-                </a>
-                <a href="/faq" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
-                  FAQ
-                </a>
-
-                <!-- Divider -->
-                <div class="h-px bg-slate-100 mx-6 my-2"></div>
-
-                <a href="#" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
-                  Log in
-                </a>
-                <a href="#" class="px-6 py-2.5 text-[15px] font-semibold text-slate-900 hover:bg-slate-50 rounded-xl transition-all flex items-center justify-between">
-                  Join waitlist
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-slate-400">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </details>
+            </button>
+          </div>
         </div>
       </div>
     </nav>

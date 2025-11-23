@@ -232,7 +232,7 @@
       <div class="absolute bottom-[10%] left-[10%] w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-[100px] opacity-60 mix-blend-multiply"></div>
     </div>
 
-    <!-- 1. NAVBAR -->
+<!-- 1. NAVBAR -->
 <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
   <div class="flex h-16 max-w-7xl mr-auto ml-auto px-6 relative items-center justify-between">
 
@@ -269,59 +269,19 @@
       </button>
     </div>
 
+    <!-- Mobile Menu Toggle -->
+    <label for="mobile-menu-toggle"
+      class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-white border border-slate-200/80 shadow-sm text-slate-600 cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" x2="21" y1="6" y2="6"></line>
+        <line x1="3" x2="21" y1="12" y2="12"></line>
+        <line x1="3" x2="21" y1="18" y2="18"></line>
+      </svg>
+    </label>
+  </div>
+</nav>
 
-
-        <!-- Desktop Logo -->
-        <a href="/" class="flex items-center gap-3 group cursor-pointer decoration-transparent relative z-50">
-          <div class="flex group-hover:opacity-80 transition-opacity text-white w-8 h-8 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5696d097-a881-4d50-a009-1e091d86288d_320w.png)] bg-cover bg-center rounded-lg shadow-sm items-center justify-center"></div>
-          <span class="group-hover:opacity-80 transition-opacity text-xl font-semibold text-slate-900 tracking-tight cursor-pointer" onclick="window.location.href='/home'" role="button">
-            Osyrs
-          </span>
-        </a>
-
-        <!-- Desktop Centered Text Links -->
-        <div class="hidden md:flex items-center gap-8">
-          <a href="/home" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
-            Home
-          </a>
-          <a href="/how-it-works" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
-            How it works
-          </a>
-          <a href="/features" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
-            Features
-          </a>
-          <a href="/pricing" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
-            Pricing
-          </a>
-          <a href="/roadmap" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
-            Roadmap
-          </a>
-          <a href="/vision" class="transition-colors text-sm font-medium text-slate-900">
-            Vision
-          </a>
-          <a href="/faq" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
-            FAQ
-          </a>
-        </div>
-
-        <!-- Right Actions -->
-        <div class="flex items-center gap-3 relative z-50">
-          <button class="hidden md:flex glass-button px-4 py-2 rounded-full text-sm font-medium text-slate-700">
-            Log in
-          </button>
-          <button class="hidden primary-btn md:block md:text-slate-800 text-sm font-medium bg-gradient-to-br from-black/10 via-black/0 to-black/10 rounded-full px-5 py-2">
-            Join waitlist
-          </button>
-          <label for="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-white border border-slate-200/80 shadow-sm text-slate-600 cursor-pointer active:scale-95 transition-all select-none hover:text-slate-900 hover:border-slate-300 z-50">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" x2="21" y1="6" y2="6"></line>
-              <line x1="3" x2="21" y1="12" y2="12"></line>
-              <line x1="3" x2="21" y1="18" y2="18"></line>
-            </svg>
-          </label>
-        </div>
-      </div>
-    </nav>
 
     <!-- 2. HERO SECTION -->
     <header class="text-center max-w-5xl mr-auto ml-auto pt-40 pr-6 pb-16 pl-6 relative">

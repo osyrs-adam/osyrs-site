@@ -1,0 +1,523 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Osyrs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+        }
+
+        /* Chrome/Iridescent Gradient Text Animation */
+        .chrome-text {
+            background: linear-gradient(to right, #1a1a1a 20%, #5b5b5b 30%, #1a1a1a 70%, #5b5b5b 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+
+        /* Glassmorphism Utilities */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .glass-button {
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .glass-button:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        /* Primary Gradient Button */
+        .primary-btn {
+            background: linear-gradient(135deg, #111827 0%, #374151 100%);
+            color: white;
+            box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .primary-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        /* Subtle Fade In */
+        .fade-in-up {
+            animation: fadeInUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hide scrollbar for clean menu */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+      /* Accordion Animation */
+        details[open] summary ~ * {
+            animation: slideDown 0.3s ease-in-out forwards;
+        }
+        @keyframes slideDown {
+            0% { opacity: 0; transform: translateY(-8px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">
+.font-geist { font-family: 'Geist', sans-serif !important; }
+</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">
+.font-roboto { font-family: 'Roboto', sans-serif !important; }
+</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">
+.font-montserrat { font-family: 'Montserrat', sans-serif !important; }
+</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">
+.font-poppins { font-family: 'Poppins', sans-serif !important; }
+</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">
+.font-playfair { font-family: 'Playfair Display', serif !important; }
+</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">
+.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }
+</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">
+.font-merriweather { font-family: 'Merriweather', serif !important; }
+</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">
+.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }
+</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }
+</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">
+.font-manrope { font-family: 'Manrope', sans-serif !important; }
+</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">
+.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }
+</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">
+.font-work-sans { font-family: 'Work Sans', sans-serif !important; }
+</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">
+.font-pt-serif { font-family: 'PT Serif', serif !important; }
+</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">
+.font-geist-mono { font-family: 'Geist Mono', monospace !important; }
+</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">
+.font-space-mono { font-family: 'Space Mono', monospace !important; }
+</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">
+.font-quicksand { font-family: 'Quicksand', sans-serif !important; }
+</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">
+.font-nunito { font-family: 'Nunito', sans-serif !important; }
+</style></head>
+  <body class="text-slate-900 antialiased selection:bg-slate-200 selection:text-slate-900 overflow-x-hidden w-full">
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full h-[800px] bg-gradient-to-b from-blue-50/50 via-purple-50/30 to-transparent pointer-events-none -z-10 blur-3xl opacity-60"></div>
+    <div class="fixed top-[20%] left-[20%] w-96 h-96 bg-indigo-200/20 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
+    <div class="fixed top-[40%] right-[20%] w-[500px] h-[500px] bg-rose-100/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- 1. NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+      <div class="flex h-16 md:h-20 max-w-7xl mx-auto px-6 items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-2.5 group cursor-pointer">
+          <div class="flex transition-transform group-hover:rotate-3 bg-center text-white opacity-90 w-8 h-8 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5696d097-a881-4d50-a009-1e091d86288d_320w.png)] bg-cover rounded-lg items-center justify-center"></div>
+          <span class="text-[19px] font-semibold text-slate-900 tracking-tight" onclick="window.location.href='/home'" role="button">
+            Osyrs
+          </span>
+        </div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/home" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Home
+          </a>
+          <a href="/how-it-works" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            How it works
+          </a>
+          <a href="/features" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Features
+          </a>
+          <a href="/pricing" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Pricing
+          </a>
+          <a href="/roadmap" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Roadmap
+          </a>
+          <a href="/vision" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Vision
+          </a>
+          <a href="/faq" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            FAQ
+          </a>
+        </div>
+
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center gap-3">
+          <button class="glass-button px-4 py-2 rounded-full text-sm font-medium text-slate-700">
+            Log in
+          </button>
+          <button class="primary-btn text-sm font-medium text-slate-700 tracking-tight bg-gradient-to-br from-black/10 via-black/0 to-black/10 rounded-full px-5 py-2">
+            Join waitlist
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Menu -->
+        <div class="md:hidden relative">
+          <details class="group relative z-50">
+            <summary class="list-none flex items-center justify-center w-11 h-11 rounded-full bg-white border border-slate-200/80 text-slate-700 cursor-pointer hover:text-slate-900 hover:bg-slate-50 transition-all shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-5 h-5">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </summary>
+
+            <!-- Invisible Click-Outside Layer -->
+            <div class="fixed inset-0 z-40 bg-transparent w-screen h-screen cursor-default" onclick="this.parentElement.removeAttribute('open')"></div>
+
+            <!-- Dropdown Card -->
+            <div class="absolute right-0 top-full mt-3 w-[280px] bg-white rounded-[28px] shadow-[0_15px_50px_-10px_rgba(0,0,0,0.12)] border border-slate-100 p-2 flex flex-col gap-1 z-50 animate-in fade-in slide-in-from-top-3 duration-200 origin-top-right">
+              <div class="flex flex-col py-2">
+                <a href="/home" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
+                  Home
+                </a>
+                <a href="/how-it-works" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
+                  How it works
+                </a>
+                <a href="/features" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
+                  Features
+                </a>
+                <a href="/pricing" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
+                  Pricing
+                </a>
+                <a href="/roadmap" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
+                  Roadmap
+                </a>
+                <a href="/vision" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
+                  Vision
+                </a>
+                <a href="/faq" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
+                  FAQ
+                </a>
+
+                <!-- Divider -->
+                <div class="h-px bg-slate-100 mx-6 my-2"></div>
+
+                <a href="#" class="px-6 py-2.5 text-[15px] font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-all text-left">
+                  Log in
+                </a>
+                <a href="#" class="px-6 py-2.5 text-[15px] font-semibold text-slate-900 hover:bg-slate-50 rounded-xl transition-all flex items-center justify-between">
+                  Join waitlist
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-slate-400">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <main class="md:pt-40 min-h-screen pt-32 pr-6 pb-24 pl-6 relative">
+      <!-- Header -->
+      <div class="max-w-4xl mx-auto text-center mb-16 md:mb-24">
+<h1 class="fade-in-up delay-100 leading-[1.1] md:text-6xl text-4xl font-semibold tracking-tighter mb-6 relative z-0">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] -z-10 pointer-events-none blur-3xl" style="background: radial-gradient(closest-side, #EEF3FF, #DEE9FF);">
+  </div>
+
+  <span class="chrome-text block pb-2">Frequently asked</span>
+  <span class="chrome-text block">questions</span>
+</h1>
+
+        <p class="fade-in-up delay-100 md:text-xl text-lg font-normal text-slate-500 tracking-tight max-w-2xl mx-auto">Clear answers about how Osyrs works today - and where it’s heading next.</p>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="max-w-2xl mx-auto space-y-4 fade-in-up delay-200">
+        <!-- FAQ 1 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          
+          <summary class="flex cursor-pointer select-none text-[17px] font-medium text-slate-800 pt-6 pr-6 pb-6 pl-6 items-center justify-between">
+            <span>What is Osyrs?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-[20px] h-[20px]" data-icon-replaced="true" style="width: 20px; height: 20px; color: rgb(148, 163, 184)">
+                <path d="m6 9 6 6 6-6" class=""></path>
+              </svg>
+            </span>
+          </summary><div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Osyrs is an AI-powered financial operating system that helps you
+            understand, optimise and automate your financial life using
+            real-time intelligence and machine learning.
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>Is Osyrs a bank?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Not yet. Osyrs launches as a smart intelligence layer using secure
+            open banking. Over time, it will evolve into a full banking
+            experience with accounts, intelligent cards and autonomous money
+            movement.
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>How does Osyrs connect to my bank?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Osyrs uses licensed Open Banking providers to securely read your
+            transactions. You stay in full control - Osyrs never touches or
+            holds your money.
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>How does Osyrs use my data?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Your data is encrypted, never sold, and only used to power your
+            personal financial model. You control what’s connected and can
+            disconnect at any time.
+          </div>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>What is Osyrs Plus?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Osyrs Plus unlocks deeper insights, spending intelligence,
+            predictive modelling, and advanced automation features.
+          </div>
+        </details>
+
+        <!-- FAQ 6 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>What is Osyrs Pro?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Osyrs Pro will offer curated lifestyle perks, intelligent event
+            planning, deeper automation, agentic investment capabilities and premium experiences embedded
+            directly within the OS.
+          </div>
+        </details>
+
+        <!-- FAQ 7 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>When will Osyrs launch?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Osyrs is currently in active development. Join the waitlist to get
+            early access and updates as we ship new phases.
+          </div>
+        </details>
+
+        <!-- FAQ 8 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>Which countries will Osyrs support first?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-[20px] h-[20px]" data-icon-replaced="true" style="color: rgb(148, 163, 184); width: 20px; height: 20px">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Osyrs will launch first in the UAE and UK, with global expansion
+            planned.
+          </div>
+        </details>
+
+        <!-- FAQ 9 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>Will Osyrs work with my existing bank?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Yes. Osyrs connects directly to your existing accounts through
+            secure Open Banking.
+          </div>
+        </details>
+
+        <!-- FAQ 10 -->
+        <details class="group bg-white/30 backdrop-blur-2xl border border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.04)] rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:scale-[1.01] hover:border-white/80">
+          <summary class="flex items-center justify-between p-6 cursor-pointer select-none text-[17px] font-medium text-slate-800">
+            <span>What devices will Osyrs support?</span>
+            <span class="transition-transform duration-500 group-open:rotate-180 text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+            Osyrs will launch on iOS and Android, with a web dashboard to
+            follow.
+          </div>
+        </details>
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="mt-24 text-center fade-in-up delay-300">
+        <p class="text-lg text-slate-500 mb-6">
+          Still curious? Something not covered here?
+        </p>
+        <button class="glass-button hover:bg-white inline-flex transition-all group cursor-pointer font-medium text-slate-700 bg-gradient-to-r from-black/10 via-black/0 to-black/10 rounded-full pt-3.5 pr-8 pb-3.5 pl-8 gap-x-2 gap-y-2 items-center" onclick="window.location.href='https://forms.gle/1YqfPcUctL5uzTcE6'" role="button">
+          Join the waitlist
+          
+        </button>
+      </div>
+    </main>
+
+    <!-- 3. TRUST / SOCIAL PROOF -->
+
+    <!-- 4. FULL-WIDTH CTA CARD -->
+
+    <!-- Minimal Footer -->
+    <footer class="py-12 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 opacity-60 hover:opacity-100 transition-opacity">
+        <div class="flex items-center gap-2">
+          <span class="text-sm font-semibold text-slate-900 tracking-tight">
+            Osyrs Ltd
+          </span>
+          <span class="text-xs text-slate-400">© 2024</span>
+        </div>
+        <div class="flex gap-6">
+          <a href="#" class="text-xs text-slate-500 hover:text-slate-900">
+            Privacy
+          </a>
+          <a href="#" class="text-xs text-slate-500 hover:text-slate-900">
+            Terms
+          </a>
+          <a href="#" class="text-xs text-slate-500 hover:text-slate-900">
+            Twitter
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  
+</body></html>

@@ -232,55 +232,104 @@
       <div class="absolute bottom-[10%] left-[10%] w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-[100px] opacity-60 mix-blend-multiply"></div>
     </div>
 
-<!-- 1. NAVBAR -->
-<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
-  <div class="flex h-16 max-w-7xl mr-auto ml-auto px-6 relative items-center justify-between">
+    <!-- 1. NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+      <div class="flex h-16 max-w-7xl mr-auto ml-auto pr-6 pl-6 relative items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-2 group cursor-pointer">
+          <div class="flex transition-transform group-hover:scale-105 text-white w-8 h-8 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5696d097-a881-4d50-a009-1e091d86288d_320w.png)] bg-cover bg-center rounded-lg items-center justify-center"></div>
+          <span class="group-hover:opacity-80 transition-opacity cursor-pointer text-xl font-semibold text-slate-900 tracking-tight" onclick="window.location.href='/home'" role="button">
+            Osyrs
+          </span>
+        </div>
 
-    <!-- Logo -->
-    <div class="flex items-center gap-2 group cursor-pointer" onclick="window.location.href='/'">
-      <div class="flex transition-transform group-hover:scale-105 text-white w-8 h-8 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5696d097-a881-4d50-a009-1e091d86288d_320w.png)] bg-cover bg-center rounded-lg items-center justify-center"></div>
-      <span class="group-hover:opacity-80 transition-opacity cursor-pointer text-xl font-semibold text-slate-900 tracking-tight">
-        Osyrs
-      </span>
-    </div>
+        <!-- Centered Text Links (Desktop) -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Home
+          </a>
+          <a href="/how-it-works" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            How it works
+          </a>
+          <a href="/features" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            Features
+          </a>
+          <a href="/pricing" class="text-slate-900 text-sm font-medium transition-colors">
+            Pricing
+          </a>
+          <a href="/roadmap" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+            Roadmap
+          </a>
+          <a href="/vision" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">
+            Vision
+          </a>
+          <a href="/faq" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">
+            FAQ
+          </a>
+        </div>
 
-    <!-- Center Links -->
-    <div class="hidden md:flex items-center gap-8">
-      <a href="/" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">Home</a>
-      <a href="/how-it-works" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">How it works</a>
-      <a href="/features" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">Features</a>
-      <a href="/pricing" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">Pricing</a>
-      <a href="/roadmap" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">Roadmap</a>
-      <a href="/vision" class="transition-colors text-sm font-medium text-slate-900">Vision</a>
-      <a href="/faq" class="hover:text-slate-900 transition-colors text-sm font-medium text-slate-500">FAQ</a>
-    </div>
+        <!-- Right Actions (Desktop Only) -->
+        <div class="hidden md:flex items-center gap-3">
+          <button class="hidden sm:flex glass-button px-4 py-2 rounded-full text-sm font-medium text-slate-700">
+            Log in
+          </button>
+          <button class="primary-btn text-sm font-medium text-slate-800 bg-gradient-to-br from-black/10 via-black/0 to-black/10 rounded-full pt-2 pr-5 pb-2 pl-5 cursor-pointer" onclick="window.location.href='https://forms.gle/1YqfPcUctL5uzTcE6'" role="button">
+            Join waitlist
+          </button>
+        </div>
 
-    <!-- Right Actions -->
-    <div class="hidden md:flex items-center gap-3">
-      <button class="hidden sm:flex glass-button px-4 py-2 rounded-full text-sm font-medium text-slate-700">
-        Log in
-      </button>
+        <!-- Mobile Hamburger (Mobile Only) -->
+        <button class="md:hidden p-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200/60 text-slate-900 shadow-sm transition-colors z-50" onclick="document.getElementById('mobile-dropdown').classList.toggle('hidden')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
 
-      <button
-        class="primary-btn text-sm font-medium text-slate-800 bg-gradient-to-br from-black/10 via-black/0 to-black/10 rounded-full pt-2 pr-5 pb-2 pl-5 cursor-pointer"
-        onclick="window.location.href='https://forms.gle/1YqfPcUctL5uzTcE6'"
-        role="button">
-        Join waitlist
-      </button>
-    </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-dropdown" class="hidden absolute top-[70px] right-6 w-[300px] bg-white rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-6 flex flex-col gap-5 z-40 border border-slate-100/80">
+          <div class="flex flex-col gap-4">
+            <a href="/" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Home
+            </a>
+            <a href="/how-it-works" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              How it works
+            </a>
+            <a href="/features" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Features
+            </a>
+            <a href="/pricing" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Pricing
+            </a>
+            <a href="/roadmap" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Roadmap
+            </a>
+            <a href="/vision" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Vision
+            </a>
+            <a href="/faq" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              FAQ
+            </a>
+          </div>
 
-    <!-- Mobile Menu Toggle -->
-    <label for="mobile-menu-toggle"
-      class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-white border border-slate-200/80 shadow-sm text-slate-600 cursor-pointer">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" x2="21" y1="6" y2="6"></line>
-        <line x1="3" x2="21" y1="12" y2="12"></line>
-        <line x1="3" x2="21" y1="18" y2="18"></line>
-      </svg>
-    </label>
-  </div>
-</nav>
+          <div class="h-px w-full bg-slate-100"></div>
+
+          <div class="flex flex-col gap-4">
+            <a href="/login" class="text-slate-600 font-medium hover:text-slate-900 text-[15px] tracking-tight">
+              Log in
+            </a>
+            <button class="flex items-center justify-between text-slate-900 font-semibold text-[15px] tracking-tight group w-full">
+              Join waitlist
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-slate-400 group-hover:text-slate-900 transition-colors">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
 
     <!-- 2. HERO SECTION -->
